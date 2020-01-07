@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BorsaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Borsa">
+          <Key>
+            <PropertyRef Name="BorsaID" />
+          </Key>
+          <Property Name="BorsaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Tur" Type="int" Nullable="false" />
+          <Property Name="Adi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+          <Property Name="Tarih" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BorsaIslem">
+          <Key>
+            <PropertyRef Name="IslemID" />
+          </Key>
+          <Property Name="IslemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BorsaID" Type="int" Nullable="false" />
+          <Property Name="Alis" Type="float" Nullable="false" />
+          <Property Name="Satis" Type="float" Nullable="false" />
+          <Property Name="Degisim" Type="float" Nullable="false" />
+          <Property Name="Tarih" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BorsaKullanici">
+          <Key>
+            <PropertyRef Name="KullaniciID" />
+          </Key>
+          <Property Name="KullaniciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Tur" Type="int" Nullable="false" />
+          <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Sifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TcKimlikNo" Type="nvarchar" MaxLength="11" Nullable="false" />
+          <Property Name="Adi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Soyadi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DogumTarihi" Type="datetime" Nullable="false" />
+          <Property Name="Telefon" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Adres" Type="nvarchar" MaxLength="50" />
+          <Property Name="KayitTarihi" Type="datetime" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BorsaKullaniciIslem">
+          <Key>
+            <PropertyRef Name="KullaniciIslemID" />
+          </Key>
+          <Property Name="KullaniciIslemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KullaniciID" Type="int" Nullable="false" />
+          <Property Name="BorsaID" Type="int" Nullable="false" />
+          <Property Name="Miktar" Type="float" Nullable="false" />
+          <Property Name="CuzdanEkle" Type="bit" Nullable="false" />
+          <Property Name="Tarih" Type="datetime" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_BorsaIslem_Borsa">
+          <End Role="Borsa" Type="Self.Borsa" Multiplicity="1" />
+          <End Role="BorsaIslem" Type="Self.BorsaIslem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Borsa">
+              <PropertyRef Name="BorsaID" />
+            </Principal>
+            <Dependent Role="BorsaIslem">
+              <PropertyRef Name="BorsaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BorsaKullaniciIslem_Borsa">
+          <End Role="Borsa" Type="Self.Borsa" Multiplicity="1" />
+          <End Role="BorsaKullaniciIslem" Type="Self.BorsaKullaniciIslem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Borsa">
+              <PropertyRef Name="BorsaID" />
+            </Principal>
+            <Dependent Role="BorsaKullaniciIslem">
+              <PropertyRef Name="BorsaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BorsaKullaniciIslem_BorsaKullanici">
+          <End Role="BorsaKullanici" Type="Self.BorsaKullanici" Multiplicity="1" />
+          <End Role="BorsaKullaniciIslem" Type="Self.BorsaKullaniciIslem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BorsaKullanici">
+              <PropertyRef Name="KullaniciID" />
+            </Principal>
+            <Dependent Role="BorsaKullaniciIslem">
+              <PropertyRef Name="KullaniciID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BorsaModelStoreContainer">
+          <EntitySet Name="Borsa" EntityType="Self.Borsa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BorsaIslem" EntityType="Self.BorsaIslem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BorsaKullanici" EntityType="Self.BorsaKullanici" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BorsaKullaniciIslem" EntityType="Self.BorsaKullaniciIslem" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_BorsaIslem_Borsa" Association="Self.FK_BorsaIslem_Borsa">
+            <End Role="Borsa" EntitySet="Borsa" />
+            <End Role="BorsaIslem" EntitySet="BorsaIslem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BorsaKullaniciIslem_Borsa" Association="Self.FK_BorsaKullaniciIslem_Borsa">
+            <End Role="Borsa" EntitySet="Borsa" />
+            <End Role="BorsaKullaniciIslem" EntitySet="BorsaKullaniciIslem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BorsaKullaniciIslem_BorsaKullanici" Association="Self.FK_BorsaKullaniciIslem_BorsaKullanici">
+            <End Role="BorsaKullanici" EntitySet="BorsaKullanici" />
+            <End Role="BorsaKullaniciIslem" EntitySet="BorsaKullaniciIslem" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BorsaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BorsaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Borsa" EntityType="BorsaModel.Borsa" />
+          <EntitySet Name="BorsaKullanici" EntityType="BorsaModel.BorsaKullanici" />
+          <EntitySet Name="BorsaKullaniciIslem" EntityType="BorsaModel.BorsaKullaniciIslem" />
+          <AssociationSet Name="FK_BorsaKullaniciIslem_Borsa" Association="BorsaModel.FK_BorsaKullaniciIslem_Borsa">
+            <End Role="Borsa" EntitySet="Borsa" />
+            <End Role="BorsaKullaniciIslem" EntitySet="BorsaKullaniciIslem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BorsaKullaniciIslem_BorsaKullanici" Association="BorsaModel.FK_BorsaKullaniciIslem_BorsaKullanici">
+            <End Role="BorsaKullanici" EntitySet="BorsaKullanici" />
+            <End Role="BorsaKullaniciIslem" EntitySet="BorsaKullaniciIslem" />
+          </AssociationSet>
+          <EntitySet Name="BorsaIslem" EntityType="BorsaModel.BorsaIslem" />
+          <AssociationSet Name="FK_BorsaIslem_Borsa" Association="BorsaModel.FK_BorsaIslem_Borsa">
+            <End Role="Borsa" EntitySet="Borsa" />
+            <End Role="BorsaIslem" EntitySet="BorsaIslem" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Borsa">
+          <Key>
+            <PropertyRef Name="BorsaID" />
+          </Key>
+          <Property Name="BorsaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tur" Type="Int32" Nullable="false" />
+          <Property Name="Adi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="BorsaKullaniciIslem" Relationship="BorsaModel.FK_BorsaKullaniciIslem_Borsa" FromRole="Borsa" ToRole="BorsaKullaniciIslem" />
+          <NavigationProperty Name="BorsaIslem" Relationship="BorsaModel.FK_BorsaIslem_Borsa" FromRole="Borsa" ToRole="BorsaIslem" />
+        </EntityType>
+        <EntityType Name="BorsaKullanici">
+          <Key>
+            <PropertyRef Name="KullaniciID" />
+          </Key>
+          <Property Name="KullaniciID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tur" Type="Int32" Nullable="false" />
+          <Property Name="KullaniciAdi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sifre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TcKimlikNo" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="Adi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Soyadi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DogumTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Adres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KayitTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BorsaKullaniciIslem" Relationship="BorsaModel.FK_BorsaKullaniciIslem_BorsaKullanici" FromRole="BorsaKullanici" ToRole="BorsaKullaniciIslem" />
+        </EntityType>
+        <EntityType Name="BorsaKullaniciIslem">
+          <Key>
+            <PropertyRef Name="KullaniciIslemID" />
+          </Key>
+          <Property Name="KullaniciIslemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KullaniciID" Type="Int32" Nullable="false" />
+          <Property Name="BorsaID" Type="Int32" Nullable="false" />
+          <Property Name="Miktar" Type="Double" Nullable="false" />
+          <Property Name="CuzdanEkle" Type="Boolean" Nullable="false" />
+          <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Borsa" Relationship="BorsaModel.FK_BorsaKullaniciIslem_Borsa" FromRole="BorsaKullaniciIslem" ToRole="Borsa" />
+          <NavigationProperty Name="BorsaKullanici" Relationship="BorsaModel.FK_BorsaKullaniciIslem_BorsaKullanici" FromRole="BorsaKullaniciIslem" ToRole="BorsaKullanici" />
+        </EntityType>
+        <Association Name="FK_BorsaKullaniciIslem_Borsa">
+          <End Type="BorsaModel.Borsa" Role="Borsa" Multiplicity="1" />
+          <End Type="BorsaModel.BorsaKullaniciIslem" Role="BorsaKullaniciIslem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Borsa">
+              <PropertyRef Name="BorsaID" />
+            </Principal>
+            <Dependent Role="BorsaKullaniciIslem">
+              <PropertyRef Name="BorsaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BorsaKullaniciIslem_BorsaKullanici">
+          <End Type="BorsaModel.BorsaKullanici" Role="BorsaKullanici" Multiplicity="1" />
+          <End Type="BorsaModel.BorsaKullaniciIslem" Role="BorsaKullaniciIslem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BorsaKullanici">
+              <PropertyRef Name="KullaniciID" />
+            </Principal>
+            <Dependent Role="BorsaKullaniciIslem">
+              <PropertyRef Name="KullaniciID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="BorsaIslem">
+          <Key>
+            <PropertyRef Name="IslemID" />
+          </Key>
+          <Property Name="IslemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BorsaID" Type="Int32" Nullable="false" />
+          <Property Name="Alis" Type="Double" Nullable="false" />
+          <Property Name="Satis" Type="Double" Nullable="false" />
+          <Property Name="Degisim" Type="Double" Nullable="false" />
+          <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Borsa" Relationship="BorsaModel.FK_BorsaIslem_Borsa" FromRole="BorsaIslem" ToRole="Borsa" />
+        </EntityType>
+        <Association Name="FK_BorsaIslem_Borsa">
+          <End Type="BorsaModel.Borsa" Role="Borsa" Multiplicity="1" />
+          <End Type="BorsaModel.BorsaIslem" Role="BorsaIslem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Borsa">
+              <PropertyRef Name="BorsaID" />
+            </Principal>
+            <Dependent Role="BorsaIslem">
+              <PropertyRef Name="BorsaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BorsaModelStoreContainer" CdmEntityContainer="BorsaEntities">
+          <EntitySetMapping Name="Borsa">
+            <EntityTypeMapping TypeName="BorsaModel.Borsa">
+              <MappingFragment StoreEntitySet="Borsa">
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="Tur" ColumnName="Tur" />
+                <ScalarProperty Name="BorsaID" ColumnName="BorsaID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BorsaKullanici">
+            <EntityTypeMapping TypeName="BorsaModel.BorsaKullanici">
+              <MappingFragment StoreEntitySet="BorsaKullanici">
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+                <ScalarProperty Name="KayitTarihi" ColumnName="KayitTarihi" />
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+                <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="TcKimlikNo" ColumnName="TcKimlikNo" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+                <ScalarProperty Name="Tur" ColumnName="Tur" />
+                <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BorsaKullaniciIslem">
+            <EntityTypeMapping TypeName="BorsaModel.BorsaKullaniciIslem">
+              <MappingFragment StoreEntitySet="BorsaKullaniciIslem">
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="CuzdanEkle" ColumnName="CuzdanEkle" />
+                <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+                <ScalarProperty Name="BorsaID" ColumnName="BorsaID" />
+                <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+                <ScalarProperty Name="KullaniciIslemID" ColumnName="KullaniciIslemID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BorsaIslem">
+            <EntityTypeMapping TypeName="BorsaModel.BorsaIslem">
+              <MappingFragment StoreEntitySet="BorsaIslem">
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Degisim" ColumnName="Degisim" />
+                <ScalarProperty Name="Satis" ColumnName="Satis" />
+                <ScalarProperty Name="Alis" ColumnName="Alis" />
+                <ScalarProperty Name="BorsaID" ColumnName="BorsaID" />
+                <ScalarProperty Name="IslemID" ColumnName="IslemID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

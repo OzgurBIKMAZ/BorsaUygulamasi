@@ -1,0 +1,94 @@
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csprojAssemblyReference.cache
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.Properties.Resources.resources
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csproj.GenerateResource.cache
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\bin\Debug\DenemeBorsa.exe.config
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\bin\Debug\DenemeBorsa.exe
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\bin\Debug\DenemeBorsa.pdb
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.dll
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.SqlServer.dll
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.xml
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.SqlServer.xml
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csproj.CopyComplete
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.exe
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.pdb
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\bin\Debug\DenemeBorsa.exe.config
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\bin\Debug\DenemeBorsa.exe
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\bin\Debug\DenemeBorsa.pdb
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.dll
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.xml
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csprojAssemblyReference.cache
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormBakiye.resources
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.Properties.Resources.resources
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csproj.GenerateResource.cache
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csproj.CoreCompileInputs.cache
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csproj.CopyComplete
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.exe
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.pdb
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormKayit.resources
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.FormMenu.resources
+C:\Users\Wissen\Desktop\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormGiris.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\DenemeBorsa.exe.config
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\DenemeBorsa.exe
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\DenemeBorsa.pdb
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.dll
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.xml
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csprojAssemblyReference.cache
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormGiris.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormKayit.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.FormMenu.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.Properties.Resources.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csproj.GenerateResource.cache
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csproj.CopyComplete
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.exe
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.pdb
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormGiris.resources
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormKayit.resources
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.FormMenu.resources
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\DenemeBorsa.exe.config
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\DenemeBorsa.exe
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\DenemeBorsa.pdb
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.dll
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.xml
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csprojAssemblyReference.cache
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormGiris.resources
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormKayit.resources
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.FormMenu.resources
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.Properties.Resources.resources
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csproj.GenerateResource.cache
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csproj.CoreCompileInputs.cache
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.csproj.CopyComplete
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.exe
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.pdb
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormAdmin.resources
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormAdmin.resources
+C:\Users\Wissen\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormKisiselBilgiler.resources
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormKisiGuncelle.resources
+D:\CSharpProjects\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormBorsaKayit.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\bin\Debug\DenemeBorsa.exe.config
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\bin\Debug\DenemeBorsa.exe
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\bin\Debug\DenemeBorsa.pdb
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\bin\Debug\EntityFramework.dll
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\bin\Debug\EntityFramework.xml
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\obj\Debug\DenemeBorsa.csprojAssemblyReference.cache
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormAdmin.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormBorsaKayit.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormGiris.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormKayit.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormKisiGuncelle.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\obj\Debug\DenemeBorsa.FormMenu.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\obj\Debug\DenemeBorsa.Properties.Resources.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\obj\Debug\DenemeBorsa.csproj.GenerateResource.cache
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\obj\Debug\DenemeBorsa.csproj.CopyComplete
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\obj\Debug\DenemeBorsa.exe
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa2\DenemeBorsa\obj\Debug\DenemeBorsa.pdb
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormAdmin.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormBorsaKayit.resources
+C:\Users\Özgür\Desktop\Yeni klasör\DenemeBorsa\DenemeBorsa\obj\Debug\DenemeBorsa.UI.FormKisiGuncelle.resources

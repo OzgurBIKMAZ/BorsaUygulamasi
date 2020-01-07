@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BorsaModelStoreContainer" CdmEntityContainer="BorsaEntities">
+    <EntitySetMapping Name="Borsa">
+      <EntityTypeMapping TypeName="BorsaModel.Borsa">
+        <MappingFragment StoreEntitySet="Borsa">
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Tur" ColumnName="Tur" />
+          <ScalarProperty Name="BorsaID" ColumnName="BorsaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BorsaKullanici">
+      <EntityTypeMapping TypeName="BorsaModel.BorsaKullanici">
+        <MappingFragment StoreEntitySet="BorsaKullanici">
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="KayitTarihi" ColumnName="KayitTarihi" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="TcKimlikNo" ColumnName="TcKimlikNo" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Tur" ColumnName="Tur" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BorsaKullaniciIslem">
+      <EntityTypeMapping TypeName="BorsaModel.BorsaKullaniciIslem">
+        <MappingFragment StoreEntitySet="BorsaKullaniciIslem">
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="CuzdanEkle" ColumnName="CuzdanEkle" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="BorsaID" ColumnName="BorsaID" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="KullaniciIslemID" ColumnName="KullaniciIslemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BorsaIslem">
+      <EntityTypeMapping TypeName="BorsaModel.BorsaIslem">
+        <MappingFragment StoreEntitySet="BorsaIslem">
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Degisim" ColumnName="Degisim" />
+          <ScalarProperty Name="Satis" ColumnName="Satis" />
+          <ScalarProperty Name="Alis" ColumnName="Alis" />
+          <ScalarProperty Name="BorsaID" ColumnName="BorsaID" />
+          <ScalarProperty Name="IslemID" ColumnName="IslemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
